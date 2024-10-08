@@ -14,5 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Install Dependensies
+        run: npm i
+
       - name: Build and Deploy to GitHub Pages
         run: npm run deploy
