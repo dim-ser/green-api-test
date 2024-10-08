@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   Build:
-    name: Deploy Gree Api Test
+    name: Build Gree Api Test
     runs-on: ubuntu-latest
     permissions:
       contents: write
