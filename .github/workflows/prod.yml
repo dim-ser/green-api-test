@@ -14,13 +14,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup github user
-        run: |
-          git config --global user.name "dim-ser"
-          git config --global user.email "dim-ser@example.com"
-
-      - name: Install Dependensies
-        run: npm i
-
-      - name: Build and Deploy to GitHub Pages
-        run: npm run deploy
+      - name: Build and Deploy React app to GitHub Pages
+        uses: omkartapale/react-deployment-gh-pages@v1.0.0
